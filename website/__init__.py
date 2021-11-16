@@ -6,9 +6,12 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     app.debug = True
-    app.secret_key = 'gigmonkey'
+    app.secret_key = 'folio'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///portfolio.sqlite'
     db.init_app(app)
+
+    from . import views
+    app.register_blueprint(views.bp)
 
     bootstrap = Bootstrap(app)
     return app
