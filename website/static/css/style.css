@@ -2,4 +2,8 @@
 .jumbotron {
     background-color: transparent;
   }
+
+.navbar-right{
+    float: right!important;
+  }
   
