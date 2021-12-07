@@ -14,25 +14,46 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body class="body silver">
+<body>
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <nav class="navbar navbar-expand-lg justify-content-between">
         <div class="container">
-            <a class="navbar-brand" href="#">Jason</a>
+            <a class="navbar-brand" href="#"><img src="static/img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav navbar-right">
-                    <a class="nav-link" href="#">Work</a>
-                    <a class="nav-link" href="#">About</a>
+            <div class="navbar-right float-right">
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link me-md-4" href="#">Work</a>
+                        <a class="nav-link me-md-4" href="#">About</a>
+                        <button class="btn btn-primary me-md-2" type="button">Get In Touch</button>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-
+    <!--HERO-->
+    <div class="hero-unit">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="static/img/hero-image.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Hello, I'm Jason.</h1>
+                    <p class="lead">I'm a junior developer residing in Brisbane, Australia. I study at QUT full-time and
+                        work part-time.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">My Story</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
