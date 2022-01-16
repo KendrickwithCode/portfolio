@@ -28,10 +28,6 @@
   padding-top:100px;
 }
 
-.detail-block{
-  float: right;
-}
-
 .btn-primary{
   color:var(--grey);
   font-weight: bold;
@@ -42,6 +38,10 @@
 .navbar-right{
     float: right!important;
   }
+
+.col-sm-1{
+  float: right!important;
+}
 
 .nav-link{
     padding-left: 26px;
@@ -79,6 +79,11 @@
  .button:focus{
    background-color:var(--lightblue);
    color:black;
+ }
+
+ .detail-block{
+  font-weight: bold;
+  color:var(--grey);
  }
 
  .btn-primary:hover{
