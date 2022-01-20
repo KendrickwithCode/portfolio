@@ -1,85 +1,54 @@
-<!doctype html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!--Animate on Scroll CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
-
-<body>
-
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="static/img/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <ul class="navbar-nav ml-auto">
-                    <a class="nav-link me-md-4" href="#Work">Work</a>
-                    <a class="nav-link me-md-4" href="#">About</a>
-                    <button class="btn btn-primary me-md-2" type="button">Get In Touch</button>
-                </ul>
+{% block header %}
+<!--HERO-->
+<div class="hero-unit">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="static/img/hero-img.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                    width="700" height="500" loading="lazy">
             </div>
-        </div>
-        </div>
-    </nav>
-    <!--HERO-->
-    <div class="hero-unit">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="static/img/hero-img.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Hello, I'm Jason.</h1>
-                    <p class="lead">I'm a junior interdisciplinary developer residing in Brisbane, Australia. I study at QUT full-time and
-                        work part-time.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn button btn-primary btn-lg px-4 me-md-2"><span>My
-                                Story</span></button>
-                    </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Hello, I'm Jason.</h1>
+                <p class="lead">I'm a junior interdisciplinary developer residing in Brisbane, Australia. I study at QUT
+                    full-time and
+                    work part-time.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn button btn-primary btn-lg px-4 me-md-2"><span>My
+                            Story</span></button>
                 </div>
             </div>
         </div>
     </div>
-    <div id="Work">
-        <div class="hero-unit Work-1">
-            <div class="container-fluid">
-                <div class="Work-Details">
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="static/img/gigmonkey.png" width="60" height="60">
+</div>
+<div id="Work">
+    <div class="hero-unit Work-1">
+        <div class="container-fluid">
+            <div class="Work-Details">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img src="static/img/gigmonkey.png" width="60" height="60">
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="detail-block">
+                            <p>Gigmonkey<br>QUT, 2021<br>Back-End Authentication</p>
                         </div>
-                        <div class="col-sm-2">
-                            <div class="detail-block">
-                                <p>Gigmonkey<br>QUT, 2021<br>Back-End Authentication</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
+                    </div>
+                    <div class="col-sm-7">
 
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <a href="http://gigmonkey.herokuapp.com/"><button type="button" class="btn button btn-primary btn-lg px-4 me-md-2"><span>Link</span></button></a>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <a href="http://gigmonkey.herokuapp.com/"><button type="button"
+                                    class="btn button btn-primary btn-lg px-4 me-md-2"><span>Link</span></button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row-12">
                 <img src="static/img/gigmonkey-preview.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                width="5000" height="2000" loading="lazy">
+                    width="5000" height="2000" loading="lazy">
             </div>
             <div class="row-12">
             </div>
@@ -87,14 +56,4 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+    {% endblock %}
