@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+    <div class="hero-unit">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/static/img/hero-image.svg" class="d-block mx-lg-auto img-fluid" alt="Selfie!" width="400"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold">Let's Talk!</h1><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="mailto:jasonfkendrick@gmail.com"> <button type="button" class="btn button btn-primary btn-lg px-4 me-md-2"><span>Say
+                                Hello!</p></span></button></a>
+                </div>
+                <div class="col-4">
+                    <a href="mailto:jasonfkendrick@gmail.com?subject=I have a job for you!"> <button type="button" class="btn button btn-primary btn-lg px-4 me-md-2"><span>Hire Me!
+                                </p></span></button></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://twitter.com/kendrickwcode"> <button type="button"
+                            class="btn button btn-primary btn-lg px-4 me-md-2"><span>@KendrickWCode</p>
+                            </span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}

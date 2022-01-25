@@ -16,5 +16,8 @@ def create_app():
     from . import about
     app.register_blueprint(about.bp)
 
+    from . import contact
+    app.register_blueprint(contact.bp)
+
     bootstrap = Bootstrap(app)
     return app
